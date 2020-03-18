@@ -8,12 +8,13 @@ body{
 h1 {
   font-family: 'Sen', sans-serif;
   color:#FFDC00;
-  text-shadow: 0px 10px 30px rgb(0,0,0,.2);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.26);
 }
 
 h2 {
   font-family: 'Sen', sans-serif;
   color:#FFDC00;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.26)
 }
 
 a {
@@ -22,6 +23,12 @@ a {
   letter-spacing: 2px;
   text-decoration: none;
   color: white;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
 }
 
 a:hover {
@@ -50,8 +57,13 @@ a:hover {
 }
 
 .img-circle {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  width: 80px
+  overflow: hidden;
+  object-fit: cover;
+  object-position: right center;
 }
 
 .list-inline {
@@ -68,6 +80,7 @@ a:hover {
   color:white;
   padding:16px 24px;
   border-radius: 8px;
+  box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.16);
 }
 
 .btn-orange:hover {
@@ -83,19 +96,19 @@ a:hover {
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .card {
+  .card .btn-orange{
     width: 70%;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .card {
+  .card .btn-orange{
     width: 70%;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .card {
+  .card .btn-orange{
     width: 70%;
   }
 }
@@ -110,3 +123,4 @@ a:hover {
     width: 100%;
   }
 }
+
